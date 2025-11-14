@@ -1,0 +1,84 @@
+.numbersSection {
+}
+
+.cutElement {
+  width: 639px;
+  height: 60px;
+  background: var(--white);
+  border: none;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  margin-bottom: -1px;
+}
+
+.wrapper {
+  padding: 0 80px;
+  background: var(--white);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  background: var(--white);
+}
+
+.content {
+  display: flex;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 127%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.textData {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.04em;
+  color: #000;
+  opacity: 0.5;
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-transform: uppercase;
+  color: #000;
+  opacity: 0.8;
+}
+
+.number {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+.container1 {
+  margin-right: 156px;
+}
+
+.container2 {
+  margin-right: 129px;
+}
+
+.container3 {
+  margin-right: 74px;
+}
+
+.container4 {
+}

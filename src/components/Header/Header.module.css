@@ -1,0 +1,91 @@
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoIcon {
+  width: 132px;
+  height: 64px;
+}
+
+.linksContainer {
+  display: flex;
+  gap: 32px;
+  margin: 0 82px 0 129px;
+  align-items: center;
+  width: 693px;
+  height: 17px;
+}
+
+.link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 121%;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--q);
+}
+
+.btnContainer {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.btnLogIn {
+  border: 1.5px solid var(--q);
+  border-radius: 3px;
+  padding: 11px 12px;
+  width: 86px;
+  height: 42px;
+  box-shadow: 0 0 4px 0 var(--q);
+  background: rgba(87, 225, 255, 0.2);
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-transform: uppercase;
+  color: var(--q);
+  cursor: pointer;
+}
+
+.btnLogIn:hover {
+  background: var(--q);
+  color: #030718;
+}
+
+.btnRegister {
+  border: 1px solid var(--q);
+  border-radius: 3px;
+  padding: 11px 12px;
+  width: 146px;
+  height: 42px;
+  box-shadow: 0 0 4px 0 var(--q);
+  background: var(--q);
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  text-transform: uppercase;
+  color: #030718;
+  cursor: pointer;
+}
+
+.btnRegister:hover {
+  background: rgba(87, 225, 255, 0.2);
+  color: var(--q);
+}

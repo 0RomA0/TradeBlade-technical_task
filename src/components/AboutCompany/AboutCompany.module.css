@@ -1,0 +1,137 @@
+.aboutSection {
+}
+
+.cutElement {
+  width: 639px;
+  height: 60px;
+  background: var(--white);
+  border: none;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  margin-bottom: -1px;
+}
+
+.wrapper {
+  padding: 0 80px;
+  background: var(--white);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  padding: 56px 0 92px;
+}
+
+.textContainer {
+  margin-right: 237px;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 127%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.text {
+  width: 413px;
+  height: auto;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #030718;
+  opacity: 0.8;
+}
+
+.infoWrapper {
+  border-radius: 4px;
+  height: 244px;
+  background: var(--purple);
+  padding: 32px 64px;
+}
+
+.textForm {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 129%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 32px;
+  width: 502px;
+  height: 72px;
+}
+
+.form {
+  position: relative;
+  width: 100%;
+}
+
+.inputWrapper {
+  display: flex;
+  width: 498px;
+  position: relative;
+}
+
+.input {
+  border-radius: 8px;
+  width: 100%;
+  height: 60px;
+  padding: 4px 200px 4px 16px;
+  background: #4a3bb3;
+  margin-bottom: 24px;
+  color: var(--white);
+  border: none;
+  font-size: 20px;
+}
+
+.input::placeholder {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 0.34;
+}
+
+.input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #201a4f inset;
+  -webkit-text-fill-color: var(--white);
+}
+
+.btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: 1px solid var(--q);
+  border-radius: 4px;
+  padding: 16px 24px;
+  width: 165px;
+  height: 52px;
+  box-shadow: 0 0 4px 0 var(--q);
+  background: var(--q);
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #030718;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(87, 225, 255, 0.2);
+  color: var(--q);
+}
