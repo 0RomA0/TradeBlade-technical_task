@@ -1,13 +1,38 @@
 .header {
-  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 320px;
   margin: 0 auto;
-  padding: 0 80px;
+  padding: 0 10px;
 }
 
 .headerContainer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: none;
+}
+
+.burger {
+  display: block;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+@media (min-width: 1440px) {
+  .header {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .burger {
+    display: none;
+  }
 }
 
 .logoIcon {
@@ -22,6 +47,7 @@
   align-items: center;
   width: 693px;
   height: 17px;
+  opacity: 0.7;
 }
 
 .link {
@@ -88,4 +114,8 @@
 .btnRegister:hover {
   background: rgba(87, 225, 255, 0.2);
   color: var(--q);
+}
+
+.iconBurger {
+  fill: none;
 }

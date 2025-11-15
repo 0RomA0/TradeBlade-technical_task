@@ -82,3 +82,35 @@
 
 .container4 {
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .container1,
+  .container2,
+  .container3,
+  .container4 {
+    margin-right: 0;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .number {
+    font-size: 42px;
+  }
+}

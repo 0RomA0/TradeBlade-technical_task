@@ -15,54 +15,112 @@ export default function Deals() {
         </div>
         <ul className={style.list}>
           <li className={style.item}>
-            <div className={style.card}>
-              <div className={style.itemContainer}>
-                <div className={style.itemContent1}>
-                  <p className={style.itemText}>NEAR/USDT</p>
-                  <p className={style.itemInfo}>
-                    SPOT · <span className={style.span}>1 мин. назад</span>
-                  </p>
-                </div>
-                <div className={style.itemContent2}>
-                  <p className={style.itemProfit}>Прибыль</p>
-                  <p className={style.itemNumber}>
-                    58.6206%
-                    <svg className={style.iconVector}>
-                      <use href="/sprite.svg#icon-Vector" />
-                    </svg>
-                  </p>
-                </div>
-
-                <div className={style.itemContent3}>
-                  <p className={style.itemTarget}>Цель 4</p>
-                  <p className={style.itemData}>Дата входа 06.10.2022</p>
-                </div>
+            <div className={style.itemContainer}>
+              <div className={style.itemContent1}>
+                <p className={style.itemText}>NEAR/USDT</p>
+                <p className={style.itemInfo}>
+                  SPOT · <span className={style.span}>1 мин. назад</span>
+                </p>
               </div>
-              <svg className={style.icon}>
-                <use href="/sprite.svg#icon-Group" />
-              </svg>
+              <div className={style.itemContent2}>
+                <p className={style.itemProfit}>Прибыль</p>
+                <p className={style.itemNumber}>
+                  58.6206%
+                  <svg className={style.iconVector}>
+                    <use href="/sprite.svg#icon-Vector" />
+                  </svg>
+                </p>
+              </div>
+
+              <div className={style.itemContent3}>
+                <p className={style.itemTarget}>Цель 4</p>
+                <p className={style.itemData}>Дата входа 06.10.2022</p>
+              </div>
             </div>
+            <svg className={style.icon}>
+              <use href="/sprite.svg#icon-Group" />
+            </svg>
           </li>
           <li className={style.item}>
-            <div className={style.card}>
-              <svg className={style.icon}>
-                <use href="/sprite.svg#icon-Group" />
-              </svg>
+            <div className={style.itemContainer}>
+              <div className={style.itemContent1}>
+                <p className={style.itemText}>BTC/USDT</p>
+                <p className={style.itemInfo}>
+                  SPOT · <span className={style.span}>1 мин. назад</span>
+                </p>
+              </div>
+              <div className={style.itemContent2}>
+                <p className={style.itemProfit}>Прибыль</p>
+                <p className={style.itemNumber}>
+                  6.02%
+                  <svg className={style.iconVector}>
+                    <use href="/sprite.svg#icon-Vector" />
+                  </svg>
+                </p>
+              </div>
+
+              <div className={style.itemContent3}>
+                <p className={style.itemTarget}>Цель 3</p>
+                <p className={style.itemData}>Дата входа 06.10.2022</p>
+              </div>
             </div>
+            <svg className={style.icon}>
+              <use href="/sprite.svg#icon-Group" />
+            </svg>
           </li>
           <li className={style.item}>
-            <div className={style.card}>
-              <svg className={style.icon}>
-                <use href="/sprite.svg#icon-Group" />
-              </svg>
+            <div className={style.itemContainer}>
+              <div className={style.itemContent1}>
+                <p className={style.itemText}>ETH/USDT</p>
+                <p className={style.itemInfo}>
+                  SPOT · <span className={style.span}>1 мин. назад</span>
+                </p>
+              </div>
+              <div className={style.itemContent2}>
+                <p className={style.itemProfit}>Прибыль</p>
+                <p className={style.itemNumber}>
+                  16.3%
+                  <svg className={style.iconVector}>
+                    <use href="/sprite.svg#icon-Vector" />
+                  </svg>
+                </p>
+              </div>
+
+              <div className={style.itemContent3}>
+                <p className={style.itemTarget}>Цель 4</p>
+                <p className={style.itemData}>Дата входа 06.10.2022</p>
+              </div>
             </div>
+            <svg className={style.icon}>
+              <use href="/sprite.svg#icon-Group" />
+            </svg>
           </li>
           <li className={style.item}>
-            <div className={style.card}>
-              <svg className={style.icon}>
-                <use href="/sprite.svg#icon-Group" />
-              </svg>
+            <div className={style.itemContainer}>
+              <div className={style.itemContent1}>
+                <p className={style.itemText}>NEAR/USDT</p>
+                <p className={style.itemInfo}>
+                  SPOT · <span className={style.span}>1 мин. назад</span>
+                </p>
+              </div>
+              <div className={style.itemContent2}>
+                <p className={style.itemProfit}>Прибыль</p>
+                <p className={style.itemNumber}>
+                  0.963%
+                  <svg className={style.iconVector}>
+                    <use href="/sprite.svg#icon-Vector" />
+                  </svg>
+                </p>
+              </div>
+
+              <div className={style.itemContent3}>
+                <p className={style.itemTarget}>Цель 4</p>
+                <p className={style.itemData}>Дата входа 06.10.2022</p>
+              </div>
             </div>
+            <svg className={style.icon}>
+              <use href="/sprite.svg#icon-Group" />
+            </svg>
           </li>
         </ul>
       </div>

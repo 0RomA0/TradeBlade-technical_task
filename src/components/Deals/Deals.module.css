@@ -38,22 +38,16 @@
   gap: 20px;
 }
 
-.item {
-}
+/* .item {
+} */
 
-.card {
+.item {
   position: relative;
   width: 299px;
   height: 208px;
   background: var(--purple);
   border-radius: 4px;
-  clip-path: polygon(
-    0 0,
-    /* лівий верх */ 85% 0,
-    /* зсунутий правий верх */ 100% 20%,
-    /* зріз */ 100% 100%,
-    0 100%
-  );
+  clip-path: polygon(0 0, 85% 0, 100% 20%, 100% 100%, 0 100%);
 }
 
 .itemContainer {
@@ -171,4 +165,45 @@
   height: 160px;
   fill: #000001;
   opacity: 0.2;
+}
+
+@media (max-width: 768px) {
+  .dealsSection {
+    padding: 0 20px;
+  }
+
+  .container {
+    padding: 40px 0 60px;
+  }
+
+  .content {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .list {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .item {
+    width: 100%;
+    height: auto;
+  }
+
+  .itemContainer {
+    padding: 16px;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .itemText {
+    font-size: 18px;
+  }
+
+  .itemNumber {
+    font-size: 22px;
+  }
 }

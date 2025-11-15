@@ -1,0 +1,137 @@
+.footerSection {
+  display: flex;
+  max-width: 1440px;
+  height: 353px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.container {
+  display: flex;
+  padding: 44px 0;
+}
+
+.stick {
+  width: 348px;
+  height: 1px;
+  background: var(--white);
+  transform: rotate(90deg);
+  opacity: 0.3;
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: 0.4;
+}
+
+.logoIcon {
+  width: 132px;
+  height: 64px;
+  margin-left: auto;
+}
+
+.linksContainer {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  width: 693px;
+  height: 17px;
+  opacity: 0.7;
+}
+
+.link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 121%;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--q);
+}
+
+.footerText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: var(--white);
+  opacity: 0.5;
+}
+
+.firstElem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.secondElem {
+  display: flex;
+  align-items: center;
+}
+
+.thirdElem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .footerSection {
+    flex-direction: column;
+    padding: 24px 16px;
+    height: auto;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0;
+  }
+
+  .firstElem,
+  .secondElem,
+  .thirdElem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .linksContainer {
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+
+  .text,
+  .footerText {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .logoIcon {
+    width: 100px;
+    height: auto;
+    margin-left: 0;
+    margin-top: 16px;
+  }
+
+  .stick {
+    display: none;
+  }
+}

@@ -61,7 +61,14 @@
   margin-bottom: 24px;
   color: var(--white);
   border: none;
+  outline: none;
   font-size: 20px;
+}
+
+.input:hover,
+.input:focus {
+  border-color: var(--q);
+  box-shadow: 0 0 8px rgba(157, 230, 247, 0.5);
 }
 
 .input::placeholder {
@@ -113,4 +120,52 @@
 .btn:hover {
   background: rgba(87, 225, 255, 0.2);
   color: var(--q);
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    flex-direction: column;
+    padding: 0 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .content {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .title {
+    width: 100%;
+    font-size: 34px;
+    line-height: 115%;
+    height: auto;
+  }
+
+  .text {
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .imgage {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .inputWrapper {
+    width: 100%;
+  }
+
+  .input {
+    width: 100%;
+    padding: 4px 100px 4px 12px;
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100px;
+    padding: 12px;
+  }
 }
