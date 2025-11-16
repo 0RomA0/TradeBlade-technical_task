@@ -1,26 +1,51 @@
 .dealsSection {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 80px;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .dealsSection {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
 }
 
 .container {
-  padding: 96px 0 148px;
+  padding: 48px 0 53px;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 96px 0 148px;
+  }
 }
 
 .content {
-  margin-bottom: 72px;
+  margin-bottom: 24px;
+  text-align: start;
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    margin-bottom: 72px;
+  }
 }
 
 .title {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 44px;
+  font-size: 28px;
   line-height: 127%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 4px;
+}
+
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 44px;
+  }
 }
 
 .text {
@@ -38,9 +63,6 @@
   gap: 20px;
 }
 
-/* .item {
-} */
-
 .item {
   position: relative;
   width: 299px;
@@ -48,6 +70,28 @@
   background: var(--purple);
   border-radius: 4px;
   clip-path: polygon(0 0, 85% 0, 100% 20%, 100% 100%, 0 100%);
+  flex-shrink: 0;
+}
+
+.track {
+  width: 100%;
+  height: 6px;
+  background: #434f70;
+  opacity: 0.4;
+  border-radius: 56px;
+  margin-top: 24px;
+  position: relative;
+}
+
+.thumb {
+  width: 189px;
+  height: 6px;
+  background: #6073a1;
+  border-radius: 56px;
+  position: absolute;
+  left: 0;
+  transition: left 0.1s linear;
+  cursor: pointer;
 }
 
 .itemContainer {
@@ -167,43 +211,23 @@
   opacity: 0.2;
 }
 
-@media (max-width: 768px) {
-  .dealsSection {
-    padding: 0 20px;
-  }
+.scrollWrap {
+  padding-bottom: 24px;
+}
 
-  .container {
-    padding: 40px 0 60px;
-  }
+.scrollWrap :global(.simplebar-track.simplebar-horizontal) {
+  height: 6px !important;
+  background: #434f70 !important;
+  opacity: 0.4 !important;
+  border-radius: 56px !important;
 
-  .content {
-    margin-bottom: 40px;
-    text-align: center;
-  }
+  max-width: 955px;
+  margin: 0 auto;
+}
 
-  .list {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .item {
-    width: 100%;
-    height: auto;
-  }
-
-  .itemContainer {
-    padding: 16px;
-  }
-
-  .icon {
-    display: none;
-  }
-
-  .itemText {
-    font-size: 18px;
-  }
-
-  .itemNumber {
-    font-size: 22px;
-  }
+.scrollWrap :global(.simplebar-scrollbar::before) {
+  height: 6px !important;
+  background: #c5c5c6 !important;
+  border-radius: 56px !important;
+  min-width: 189px;
 }

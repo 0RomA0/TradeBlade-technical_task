@@ -27,14 +27,17 @@ export default function AboutCompany() {
             </p>
             <form className={style.form} onSubmit={handleSubmit}>
               <div className={style.inputWrapper}>
-                <input
-                  className={style.input}
-                  name="email"
-                  type="email"
-                  placeholder="ВАШ E-MAIL"
-                  required
-                  autoComplete="off"
-                />
+                <div className={style.inputContainer}>
+                  <input
+                    className={style.input}
+                    name="email"
+                    type="email"
+                    placeholder="ВАШ E-MAIL"
+                    required
+                    autoComplete="off"
+                  />
+                </div>
+
                 <button className={style.btn} type="submit">
                   попробовать
                 </button>

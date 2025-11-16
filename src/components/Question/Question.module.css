@@ -6,26 +6,45 @@
 }
 
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 96px 297px;
+  padding: 32px 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 96px 297px;
+  }
 }
 
 .title {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 44px;
+  font-size: 28px;
   line-height: 127%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #000;
-  margin-bottom: 64px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 44px;
+    margin-bottom: 64px;
+  }
 }
 
 .questionWrapper {
   display: flex;
-  gap: 32px;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .questionWrapper {
+    gap: 32px;
+  }
 }
 
 .wrapperContent {
@@ -45,10 +64,21 @@
 .wrapperTitle {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 24px;
   line-height: 133%;
   letter-spacing: -0.04em;
   color: #030718;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapperTitle {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: -0.04em;
+    color: #030718;
+  }
 }
 
 .text {
@@ -66,6 +96,7 @@
   stroke-width: 1.4px;
   stroke: #030718;
   fill: none;
+  flex-shrink: 0;
 }
 
 /* TODO IF TEXT OPEN */
@@ -79,42 +110,17 @@
 }
 
 .wrappeTitleOpen {
+  font-size: 20px;
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 24px;
   line-height: 133%;
   letter-spacing: -0.04em;
   margin-bottom: 12px;
   color: var(--white);
 }
 
-@media (max-width: 768px) {
-  .questionSection .container {
-    padding: 32px 16px;
-  }
-
-  .questionWrapper {
-    gap: 16px;
-  }
-
-  .wrapperContent,
-  .wrapperContentOpen {
-    width: 100%;
-    padding: 12px;
-  }
-
-  .wrapperTitle,
+@media screen and (min-width: 1440px) {
   .wrappeTitleOpen {
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-
-  .text {
-    font-size: 14px;
-  }
-
-  .vectorIcon {
-    width: 20px;
-    height: 20px;
+    font-size: 24px;
   }
 }

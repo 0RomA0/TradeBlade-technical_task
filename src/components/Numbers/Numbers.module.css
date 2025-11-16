@@ -2,7 +2,7 @@
 }
 
 .cutElement {
-  width: 639px;
+  width: 267px;
   height: 60px;
   background: var(--white);
   border: none;
@@ -10,32 +10,58 @@
   margin-bottom: -1px;
 }
 
+@media screen and (min-width: 1440px) {
+  .cutElement {
+    width: 639px;
+  }
+}
+
 .wrapper {
-  padding: 0 80px;
   background: var(--white);
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    padding: 0 80px;
+  }
 }
 
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  height: 280px;
-  display: flex;
-  align-items: center;
-  background: var(--white);
+  padding: 24px 26px 48px 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 20px;
+  row-gap: 24px;
 }
 
-.content {
-  display: flex;
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+    margin: 0 auto;
+  }
 }
 
 .title {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 44px;
-  line-height: 127%;
+  font-size: 28px;
+  line-height: 129%;
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #000;
+}
+
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 44px;
+    line-height: 127%;
+  }
 }
 
 .textData {
@@ -61,56 +87,57 @@
 .number {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 60px;
+  font-size: 35px;
   line-height: 110%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--purple);
 }
 
+@media screen and (min-width: 1440px) {
+  .number {
+    font-size: 60px;
+  }
+}
+
 .container1 {
-  margin-right: 156px;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .container2 {
-  margin-right: 129px;
-}
-
-.container3 {
-  margin-right: 74px;
+  width: 115px;
+  grid-column: 1;
+  grid-row: 2;
 }
 
 .container4 {
+  grid-column: 1;
+  grid-row: 3;
 }
 
-@media (max-width: 768px) {
-  .wrapper {
-    padding: 0 20px;
+.container3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+@media screen and (min-width: 1440px) {
+  .container1 {
+    margin-right: 156px;
   }
 
-  .container {
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-    gap: 24px;
+  .container2 {
+    margin-right: 129px;
   }
 
-  .content {
-    display: flex;
-    flex-direction: column;
+  .container3 {
+    margin-right: 74px;
   }
+
   .container1,
   .container2,
   .container3,
   .container4 {
-    margin-right: 0;
-  }
-
-  .title {
-    font-size: 32px;
-  }
-
-  .number {
-    font-size: 42px;
+    width: auto;
   }
 }
